@@ -1,0 +1,116 @@
+baseURL = 'https://debdutdeb.github.io/blog'
+languageCode = 'en-us'
+title = 'Blog'
+
+theme = 'hugo-notepadium-mod'
+
+copyright = '© 2022 Debdut Chakraborty'
+
+paginate = 5
+
+enableEmoji = true
+
+[minify]
+# Deploy with --minify command to minify assets
+# Need Hugo version v0.68.0+
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      keepCSS2 = true
+      precision = 1
+    [minify.tdewolff.html]
+      keepComments = false
+      keepConditionalComments = true
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepWhitespace = false
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 1
+    [minify.tdewolff.json]
+      precision = 0
+    [minify.tdewolff.svg]
+      precision = 1
+    [minify.tdewolff.xml]
+      keepWhitespace = false
+
+# Configure chroma highlight
+# Reference https://gohugo.io/content-management/syntax-highlighting/
+# https://gohugo.io/getting-started/configuration-markup#highlight
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+noClasses = true
+style = "monokai"
+
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
+[markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+[author]
+    name = "理头张"  # Change to your name
+
+
+[params]
+author = "Debdut Chakraborty"
+description = "Debdut's blog"
+style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+# logo = ""
+# slogan = ""
+#license = "<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/><img alt=Creative Commons License style=border-width:0 src=https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png /></a><br />This work is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>."
+
+# If you use custom css files, declare them here
+[params.assets]
+css = ["css/fonts.css"]
+
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+
+[params.math]
+enable = true # load math globally, default: false. You can always enable math on per page.
+use = "mathjax"  # builtin: "katex", "mathjax".  default: "katex"
+
+#[params.nav]
+#showCategories = true       # /categories/
+#showTags = true        # /tags/
+
+# You can add taxonomies in there, then link new pages in [[params.nav.custom]]
+# Reference https://gohugo.io/content-management/taxonomies/
+#[taxonomies]
+#  category = "categories"
+#  tag = "tags"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  search = "search"
+
+[[params.nav.custom]]
+title = "Index"
+url = "/"
+
+[[params.nav.custom]]
+title = "Tags"
+url = "/tags/"
+
+[[params.nav.custom]]
+title = "Archives"
+url = "/archives/"
+
+[[params.nav.custom]]
+title = "About"
+url = "/about/"
