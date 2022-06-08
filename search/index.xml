@@ -28,14 +28,14 @@
 &lt;/ol>
 &lt;h2 id="what-happens-when-you-execute-a-command">What happens when you execute a command?&lt;/h2>
 &lt;p>Now that you have the understanding of what processes are and what &lt;code>exec&lt;/code> is, the next question is, what happens when we write say &lt;code>cat filename&lt;/code>? When you start a terminal, you have a total of two processes. One for the application itself, another for the shell, which in my case is &lt;code>bash&lt;/code>. You can check that via a system monitor like the &lt;code>mate-system-monitor&lt;/code>. Take a look at the picture below&lt;/p>
-&lt;p>&lt;a href="https://debdutdeb.github.io/blog/static/shell_builtins/terminal_process.png">Show image&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://debdutdeb.github.io/blog/shell_builtins/terminal_process.png">Show image&lt;/a>&lt;/p>
 &lt;p>Now when you execute a command, your shell spawns a new process, then replaces that process with the program you wanted to execute with exec. See the following diagram&lt;/p>
 &lt;blockquote>
 &lt;p>missing sorry :p&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a href="https://debdutdeb.github.io/blog/static/shell_builtins/command_execution.png">Show image&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://debdutdeb.github.io/blog/shell_builtins/command_execution.png">Show image&lt;/a>&lt;/p>
 &lt;p>Test this with &lt;code>sleep&lt;/code>. Open a terminal, and run &lt;code>sleep 1d&lt;/code>. Then open the system monitor, and navigate to the terminal. You&amp;rsquo;ll see something like the following&lt;/p>
-&lt;p>&lt;a href="https://debdutdeb.github.io/blog/static/shell_builtins/sleep_process.png">Show image&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://debdutdeb.github.io/blog/shell_builtins/sleep_process.png">Show image&lt;/a>&lt;/p>
 &lt;h2 id="so-what-is-a-builtin-exactly">So what is a builtin exactly?&lt;/h2>
 &lt;p>For starters, a builtin is not a binary file. You won&amp;rsquo;t find it in your filesystem. Builtins are the shell&amp;rsquo;s internal functions. If being specific, a builtin is a 48-byte data structure (Differs between hardware). When you use a builtin, a separate process is not spawned. A builtin to bash is the same as renaming a file is in a file manager. It&amp;rsquo;s its own feature, it doesn&amp;rsquo;t have to rely on any other program. This is important because a builtin essentially eliminates the initial system calls that bash had to use if it were an actual binary program. In other words, using builtins results in less overhead, and it&amp;rsquo;s effectively much faster. Now should we test this? Absolutely!&lt;/p>
 &lt;p>One fine command that we can use, is &lt;code>echo&lt;/code>. There was a time when experienced people in public forums or at other places used to say &amp;ldquo;Don&amp;rsquo;t use echo, use printf instead&amp;rdquo;. This is because &lt;code>printf&lt;/code> is a bash builtin whereas &lt;code>echo&lt;/code> is an external command. That is not the case anymore. Try running &lt;code>type echo&lt;/code>. You&amp;rsquo;ll see something like the following.&lt;/p>
