@@ -1,7 +1,7 @@
 ---
 title: "Creating Shell Builtins"
 date: 2022-06-08T15:31:59+05:30
-draft: true
+draft: false
 tags: ["c", "bash", "shell", "programming"]
 categories: ["system-programming", "shell"]
 # series: [""]
