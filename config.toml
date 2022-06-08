@@ -63,7 +63,7 @@ unsafe = true  # enable raw HTML in Markdown
   post = "/:year/:month/:title/"
 
 [author]
-    name = "理头张"  # Change to your name
+    name = "Debdut Chakraborty"  # Change to your name
 
 
 [params]
@@ -110,6 +110,10 @@ url = "/tags/"
 [[params.nav.custom]]
 title = "Archives"
 url = "/archives/"
+
+[[params.nav.custom]]
+title = "Search"
+url = "/search/"
 
 [[params.nav.custom]]
 title = "About"
