@@ -1,7 +1,7 @@
 ---
 title: "Fundamental Theory of Arithmetic"
 date: 2024-03-10T22:51:56+05:30
-draft: true
+draft: false
 math: true
 tags: ["mathematics", "number-theory"]
 ---
