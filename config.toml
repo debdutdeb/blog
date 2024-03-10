@@ -118,3 +118,6 @@ url = "/search/"
 [[params.nav.custom]]
 title = "About"
 url = "/about/"
+
+[[module.imports]]
+path = "github.com/barklan/hugo-dead-simple"
