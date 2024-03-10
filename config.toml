@@ -2,7 +2,7 @@ baseURL = 'https://debdutdeb.github.io/blog'
 languageCode = 'en-us'
 title = 'Blog'
 
-theme = 'hugo-notepadium-mod'
+theme = 'hugo-dead-simple'
 
 copyright = '© 2022 Debdut Chakraborty'
 
