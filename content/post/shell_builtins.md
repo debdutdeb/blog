@@ -51,17 +51,17 @@ What is happening behind the scenes? To understand builtins and why you should p
 
 Now that you have the understanding of what processes are and what `exec` is, the next question is, what happens when we write say `cat filename`? When you start a terminal, you have a total of two processes. One for the application itself, another for the shell, which in my case is `bash`. You can check that via a system monitor like the `mate-system-monitor`. Take a look at the picture below
 
-[Show image](/shell_builtins/terminal_process.png)
+![Terminal process](/shell_builtins/terminal_process.png)
 
 Now when you execute a command, your shell spawns a new process, then replaces that process with the program you wanted to execute with exec. See the following diagram
 
 > missing sorry :p
 
-[Show image](/shell_builtins/command_execution.png)
+![Command execution](/shell_builtins/command_execution.png)
 
 Test this with `sleep`. Open a terminal, and run `sleep 1d`. Then open the system monitor, and navigate to the terminal. You'll see something like the following
 
-[Show image](/shell_builtins/sleep_process.png)
+![Sleep process](/shell_builtins/sleep_process.png)
 
 ## So what is a builtin exactly?
 
