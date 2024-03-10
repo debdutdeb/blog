@@ -1,10 +1,10 @@
-baseURL = 'https://debdutdeb.github.io/blog'
+baseURL = 'https://blog.debdutdeb.com'
 languageCode = 'en-us'
 title = 'Blog'
 
 theme = 'hugo-dead-simple'
 
-copyright = '© 2022 Debdut Chakraborty'
+copyright = '© 2024 Debdut Chakraborty'
 
 paginate = 5
 
