@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Number-Theory on Blog</title><link>https://blog.debdutdeb.com/tags/number-theory/</link><description>Recent content in Number-Theory on Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2024 Debdut Chakraborty</copyright><lastBuildDate>Sun, 10 Mar 2024 22:51:56 +0530</lastBuildDate><atom:link href="https://blog.debdutdeb.com/tags/number-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>Fundamental Theory of Arithmetic</title><link>https://blog.debdutdeb.com/2024/03/fundamental-theory-of-arithmetic/</link><pubDate>Sun, 10 Mar 2024 22:51:56 +0530</pubDate><guid>https://blog.debdutdeb.com/2024/03/fundamental-theory-of-arithmetic/</guid><description>There is one and only one unique prime factorization of a number.
-If you have a number, like \(34\), factoring it we get -
-$$ \begin{align} fact(34) = 2 * 17 \end{align} $$
-Question is, can you have a different set that is other than { \(2\) } It may seem evident from the example above but let’s start with an informal proof.
-Firstly, we&amp;rsquo;ll use a different definition of a set, where elements can show up multiple times - this is critical in making the proof simpler.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Number-Theory on Blog</title><link>https://debdut.blog/tags/number-theory/</link><description>Recent content in Number-Theory on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© 2025 Debdut Chakraborty</copyright><lastBuildDate>Sun, 10 Mar 2024 22:51:56 +0530</lastBuildDate><atom:link href="https://debdut.blog/tags/number-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>Fundamental Theory of Arithmetic</title><link>https://debdut.blog/2024/03/fundamental-theory-of-arithmetic/</link><pubDate>Sun, 10 Mar 2024 22:51:56 +0530</pubDate><guid>https://debdut.blog/2024/03/fundamental-theory-of-arithmetic/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;There is one and only one unique prime factorization of a number.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you have a number, like \(34\), factoring it we get -&lt;/p&gt;
+&lt;p&gt;$$
+\begin{align}
+fact(34) = 2 * 17
+\end{align}
+$$&lt;/p&gt;
+&lt;p&gt;Question is, can you have a different set that is other than { \(2\) } It may seem evident from the example above but let’s start with an informal proof.&lt;/p&gt;
+&lt;p&gt;Firstly, we&amp;rsquo;ll use a different definition of a set, where elements &lt;strong&gt;can show up multiple times&lt;/strong&gt; - this is critical in making the proof simpler.&lt;/p&gt;</description></item></channel></rss>
