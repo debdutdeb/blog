@@ -6,7 +6,7 @@ theme = 'hugo-dead-simple'
 
 copyright = '© 2025 Debdut Chakraborty'
 
-paginate = 5
+#paginate = 5
 
 enableEmoji = true
 
